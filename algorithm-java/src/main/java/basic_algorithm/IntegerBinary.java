@@ -1,7 +1,5 @@
 package basic_algorithm;
 
-import java.util.concurrent.ScheduledExecutorService;
-
 /**
  * ClassName: IntegerDichotomy
  * Description:
@@ -10,10 +8,10 @@ import java.util.concurrent.ScheduledExecutorService;
  * @Create 2023-06-17
  * @Version 1.0
  */
-public class IntegerDichotomy {
+public class IntegerBinary {
 
   // 伪代码
-  public static int dichotomy_1(int left, int right) {
+  public static int binary_1(int left, int right) {
     while (left < right) {
       int mid = (right + left) >> 1;
       // check为判断条件
@@ -23,7 +21,7 @@ public class IntegerDichotomy {
     return left;
   }
 
-  public static int dichotomy_2(int left, int right) {
+  public static int binary_2(int left, int right) {
     while(left < right) {
       int mid = (left + right + 1) >> 1;
       // check为判断条件
