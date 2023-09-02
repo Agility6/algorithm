@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a56cab2-b37f-432a-aac8-e2c085978203" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithm-go/basic_algorithms/01_quickSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm-go/basic_algorithms/02_mergeSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm-java/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm-java/src/main/java/basic_algorithm/FloatBinary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm-java/src/main/java/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm-java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm-java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm-java/src/main/java/basic_algorithm/IntegerDichotomy.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm-java/src/main/java/basic_algorithm/IntegerBinary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +19,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
   <component name="ProjectId" id="2RJTtgRKpIyRFcI6Y9FdZ8l24Fb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,10 +29,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/t/algorithm",
+    "last_opened_file_path": "/Users/agility6/t/algorithm",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

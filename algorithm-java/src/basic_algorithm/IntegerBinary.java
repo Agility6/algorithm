@@ -1,5 +1,7 @@
 package basic_algorithm;
 
+import javax.swing.*;
+
 /**
  * ClassName: IntegerDichotomy
  * Description:
@@ -29,6 +31,10 @@ public class IntegerBinary {
       else right = mid - 1;
     }
     return left;
+  }
+
+  private static boolean check(int ars) {
+    return true;
   }
 
 }

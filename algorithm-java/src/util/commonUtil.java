@@ -1,4 +1,4 @@
-package basic_algorithm.util;
+package util;
 
 /**
  * ClassName: commonUtil

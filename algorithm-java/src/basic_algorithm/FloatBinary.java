@@ -24,4 +24,8 @@ public class FloatBinary {
     return l;
   }
 
+  private static boolean check(double arg) {
+    return true;
+  }
+
 }
