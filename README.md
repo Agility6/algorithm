@@ -28,6 +28,6 @@
 - [ ] one-dimensional differential
 - [ ] two-dimensional differential
 - [ ] bit operations
-- [ ] double pointer algorithms
+- [x] double pointer algorithms
 - [ ] discretization
 - [ ] interval merging

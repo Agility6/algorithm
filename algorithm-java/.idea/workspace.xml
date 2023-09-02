@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f18e66c5-7ce4-42a8-91c8-5162d1cbf806" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/Test_MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Test_QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm-java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basic_algorithm/FloatBinary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basic_algorithm/IntegerBinary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basic_algorithm/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basic_algorithm/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/commonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../algorithm-java11/.idea/algorithm-java1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../algorithm-java11/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../algorithm-java11/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../algorithm-java11/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../algorithm-java11/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../algorithm-java11/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/algorithm-java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic_algorithm/Double_pointer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic_algorithm/FloatBinary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic_algorithm/IntegerBinary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic_algorithm/MergeSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic_algorithm/QuickSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic_algorithm/util/commonUtil.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
