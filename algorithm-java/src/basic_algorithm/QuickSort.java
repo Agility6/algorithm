@@ -1,11 +1,5 @@
 package basic_algorithm;
 
-import basic_algorithm.util.commonUtil;
-
-import java.lang.reflect.Array;
-
-import static basic_algorithm.QuickSort.quick_sort;
-
 /**
  * ClassName: QuickSort
  * Description:
