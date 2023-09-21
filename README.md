@@ -37,7 +37,21 @@
     所以当我们 b[l] += c 执行这句时，后面的都会+c
     但是求的是[l, r]区域+c，所以将r+1后面的-c
     ```
-- [ ] two-dimensional differential
+- [x] two-dimensional differential
+
+    ```tex
+    给以(x1, y1)为左上角，(x2, y2)为右下角的子矩阵中的所有元素加上c：
+
+    总体思路和一位的差不多
+    1. 先构造b数组
+      b[x1, y1] += c
+      b[x2 + 1, y1] -= c
+      b[x1, y2 + 1] -= c
+      [x2 + 1, y2 + 1] += c
+    
+    2. 对b数组求前缀和
+      b[i][j] = b[x - 1][j] + b[x][j - 1] - b[i - 1][j - 1] + b[i][j]
+    ```
 - [ ] bit operations
 - [x] double pointer algorithms
 - [ ] discretization
