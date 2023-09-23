@@ -54,5 +54,5 @@
     ```
 - [ ] bit operations
 - [x] double pointer algorithms
-- [ ] discretization
-- [ ] interval merging
+- [x] discretization
+- [x] interval merging
