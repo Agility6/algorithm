@@ -56,3 +56,17 @@
 - [x] double pointer algorithms
 - [x] discretization
 - [x] interval merging
+
+### 🦄 BASIC_ALGORITHMS 
+
+- [ ] Single Linked List
+- [ ] Doubly Linked List 
+- [ ] Stack
+- [ ] Queue
+- [ ] Monotone Stack
+- [ ] Monotonic Queue
+- [ ] KMP
+- [ ] Trie
+- [ ] Disjoint-set data structure
+- [ ] Heap
+- [ ] Hash table
