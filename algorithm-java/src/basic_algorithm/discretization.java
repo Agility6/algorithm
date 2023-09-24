@@ -14,21 +14,15 @@ public class discretization {
      */
     public static int unique(List<Integer> list) {
 
-        for (int i = 1, j = 0; i < list.size(); i++) {
-            
-            while (j < list.size() && (j == 0 || list.get(i) == list.get(i - 1))) {
+        int j = 0;
+        for (int i = 0; i < list.size(); i++) {
+            if (i == 0 || !list.get(i).equals(list.get(i - 1))) {
+                list.set(j, list.get(i));
                 j++;
             }
-
-            if (j >= list.size()) {
-                return j;
-            }
-
-            list.set(i, list.get(j));
-            j++;
         }
 
-        return -1;
+        return j;
     }
 
     /**
