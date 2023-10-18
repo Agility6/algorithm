@@ -94,7 +94,116 @@
   }
   ```
 
-- [ ] Trie
-- [ ] Disjoint-set data structure
+- [x] Trie
+
+  ```java
+    // 存储树中每个节点的子节点
+    int[][] son = new int[N][26];
+    // 存储以节点为结尾的单词个数
+    int[] cnt = new int[N];
+    // 标记下标
+    int index = 0;
+
+    // 插入操作
+    public void insert(String str) {
+
+      int p = 0;
+
+      for (int i = 0; i < str.length(); i++) {
+        
+        // 如果不存在该字符则添加，u：自己定义的含义
+        if (son[p][u] == 0) son[p][u] = ++index;
+        // 存在则继续
+        p = son[p][u];
+      }
+
+      cnt[p]++;
+    }
+
+    // 查询字符串出现的次数
+    public int query(String str) {
+      
+      int p = 0;
+
+      for (int i = 0; i < str.length(); i++) {
+
+        // 不存在该字符则该字符串没有
+        if (son[p][u] == 0) return 0;
+        p = son[p][u];
+
+      }
+
+      return cnt[p];
+    }
+  ```
+- [x] Disjoint-set data structure
+
+  朴素并查集
+  ```java
+    int[] p = new int[N]; // 存储每个节点的祖宗节点
+
+    // 返回祖宗节点 + 路径压缩
+    public int find(int x) {
+
+      if (p[x] != x) p[x] = find(p[x]);
+      return p[x];
+      
+    }
+
+    // 初始化 节点编号1~n
+    for (int i = 1; i <= n; i++) p[i] = i;
+
+    // 合并a和b集合(a向b合并，a集合的根节点等于b集合的根节点)
+    p[find(a)] = find(b);
+  ```
+
+  维护size的并查集
+  ```java
+    int[] p = new int[N];
+    // 记录祖宗节点所在集合中的数量
+    int[] size = new int[N];
+
+    public int find(int x) {
+      if (p[x] != x) p[x] = find(p[x]);
+      return p[x];
+    }
+
+    // 初始化
+    for (int i = 1; i <= n; i++) {
+      p[i] = i;
+      size[i] = 1;
+    }
+
+    // 合并两个集合(有顺序要求)
+    // 将a集合合并到b集合中，将a的size加到a
+    size[find(b)] += size[find(a)];
+    p[find[a]] = find(b); 
+  ```
+
+  // 维护到祖宗节点的距离的并查集
+  ```java
+ 
+    int[] p = new int[N];
+    int[] d = new int[N]; // x到p[x]的距离
+
+    public int find(int x) {
+      if (p[x] != x) {
+        int u = find(p[x]);
+        d[x] += d[p[x]]; // 当前节点的值加当前节点的父元素的值
+        p[x] = u;
+      }
+
+      return p[x];
+    }
+
+    for (int = 1; i <= n; i++) {
+      p[i] = i;
+      d[i] = 0;
+    }
+
+    // 合并
+    p[find(a)] = find(b);
+    d[find(a)] = distance; // 具体问题
+  ```
 - [ ] Heap
 - [ ] Hash table
