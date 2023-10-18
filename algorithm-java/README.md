@@ -8,9 +8,12 @@
   
   <details>
   <summary>Code</summary>
+    
     ```tex
+    
       S[i] = a[1] + a[2] + ... a[i]
       a[l] + ... + a[r] = S[r] - S[l - 1]
+    
     ``` 
   
   </details>  
@@ -18,18 +21,24 @@
   
   <details>
   <summary>Code</summary>
+    
     ```tex
+    
       S[i, j] = 第i行j列格子左上部分所有元素的和
       以(x1, y1)为左上角，(x2, y2)为右下角的子矩阵的和为：
       S[x2, y2] - S[x1 - 1, y2] - S[x2, y1 - 1] + S[x1 - 1, y1 - 1]
+      
     ```
+    
   </details> 
 
 - [x] one-dimensional differential
 
   <details>
   <summary>Code</summary>
+    
      ```tex
+     
       给区间[l, r]只每个数加上c: b[l] += c, b[r + 1] -= c
       满足以下规律
       a[i] = b[1] + b[2] + b[3] + ... + b[i]
@@ -37,14 +46,18 @@
       那么 a[l + 1] = a[l] + b[l + 1] + c 也会+C 依次类推
       所以当我们 b[l] += c 执行这句时，后面的都会+c
       但是求的是[l, r]区域+c，所以将r+1后面的-c
+     
      ```
+     
   </details> 
 
 - [x] two-dimensional differential
 
   <details>
   <summary>Code</summary>
+    
     ```tex
+    
       给以(x1, y1)为左上角，(x2, y2)为右下角的子矩阵中的所有元素加上c：
 
       总体思路和一维的差不多
@@ -56,7 +69,9 @@
       
       2. 对b数组求前缀和
         b[i][j] = b[x - 1][j] + b[x][j - 1] - b[i - 1][j - 1] + b[i][j]
-    ``` 
+    
+    ```
+    
   </details>  
 
     
@@ -77,9 +92,10 @@
   
   <details>
   <summary>Code</summary>
+    
     ```java
+    
       /** s[]是长文本，p[]是模式串，n是s的长度，m是p的长度 */
-
       /** 求模式串的Next数组 */
       for (int i = 2, j = 0; j <= m; i++) {
 
@@ -102,7 +118,9 @@
           // 匹配成功
         }
       }
+    
     ```
+    
   </details>  
    
 
@@ -110,7 +128,9 @@
 
   <details>
   <summary>Code</summary>
+    
     ```java
+    
     // 存储树中每个节点的子节点
     int[][] son = new int[N][26];
     // 存储以节点为结尾的单词个数
@@ -149,7 +169,9 @@
 
       return cnt[p];
     }
+    
   ```
+    
   </details> 
 
 - [x] Disjoint-set data structure
@@ -157,7 +179,9 @@
   <details>
   <summary>Code</summary>
     朴素并查集
+    
       ```java
+      
         int[] p = new int[N]; // 存储每个节点的祖宗节点
 
         // 返回祖宗节点 + 路径压缩
@@ -173,10 +197,13 @@
 
         // 合并a和b集合(a向b合并，a集合的根节点等于b集合的根节点)
         p[find(a)] = find(b);
+      
       ```
 
     维护size的并查集
+
       ```java
+      
         int[] p = new int[N];
         // 记录祖宗节点所在集合中的数量
         int[] size = new int[N];
@@ -199,7 +226,9 @@
       ```
 
     维护到祖宗节点的距离的并查集
+
       ```java
+      
         int[] p = new int[N];
         int[] d = new int[N]; // x到p[x]的距离
 
@@ -222,6 +251,7 @@
         // 合并
         p[find(a)] = find(b);
         d[find(a)] = distance; // 具体问题
+      
       ```
 
   </details> 
