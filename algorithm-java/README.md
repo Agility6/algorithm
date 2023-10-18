@@ -178,81 +178,83 @@
 
   <details>
   <summary>Code</summary>
+    
     朴素并查集
     
-      ```java
+    ```java
       
-        int[] p = new int[N]; // 存储每个节点的祖宗节点
+    int[] p = new int[N]; // 存储每个节点的祖宗节点
 
-        // 返回祖宗节点 + 路径压缩
-        public int find(int x) {
+    // 返回祖宗节点 + 路径压缩
+    public int find(int x) {
 
-          if (p[x] != x) p[x] = find(p[x]);
-          return p[x];
+    if (p[x] != x) p[x] = find(p[x]);
+      return p[x];
           
-        }
+    }
 
-        // 初始化 节点编号1~n
-        for (int i = 1; i <= n; i++) p[i] = i;
+    // 初始化 节点编号1~n
+    for (int i = 1; i <= n; i++) p[i] = i;
 
-        // 合并a和b集合(a向b合并，a集合的根节点等于b集合的根节点)
-        p[find(a)] = find(b);
+    // 合并a和b集合(a向b合并，a集合的根节点等于b集合的根节点)
+    p[find(a)] = find(b);
       
-      ```
+    ```
 
     维护size的并查集
 
-      ```java
+    ```java
       
-        int[] p = new int[N];
-        // 记录祖宗节点所在集合中的数量
-        int[] size = new int[N];
+    int[] p = new int[N];
+    // 记录祖宗节点所在集合中的数量
+    int[] size = new int[N];
 
-        public int find(int x) {
-          if (p[x] != x) p[x] = find(p[x]);
-          return p[x];
-        }
+    public int find(int x) {
+    if (p[x] != x) p[x] = find(p[x]);
+      return p[x];
+    }
 
-        // 初始化
-        for (int i = 1; i <= n; i++) {
-          p[i] = i;
-          size[i] = 1;
-        }
+    // 初始化
+    for (int i = 1; i <= n; i++) {
+      p[i] = i;
+      size[i] = 1;
+    }
 
-        // 合并两个集合(有顺序要求)
-        // 将a集合合并到b集合中，将a的size加到a
-        size[find(b)] += size[find(a)];
-        p[find[a]] = find(b); 
-      ```
+    // 合并两个集合(有顺序要求)
+    // 将a集合合并到b集合中，将a的size加到a
+    size[find(b)] += size[find(a)];
+    p[find[a]] = find(b);
+    
+    ```
 
     维护到祖宗节点的距离的并查集
 
-      ```java
+    ```java
       
-        int[] p = new int[N];
-        int[] d = new int[N]; // x到p[x]的距离
+    int[] p = new int[N];
+    int[] d = new int[N]; // x到p[x]的距离
 
-        public int find(int x) {
+    public int find(int x) {
 
-          if (p[x] != x) {
-            int u = find(p[x]);
-            d[x] += d[p[x]]; // 当前节点的值加当前节点的父元素的值
-            p[x] = u;
-          }
+    if (p[x] != x) {
+      int u = find(p[x]);
+      d[x] += d[p[x]]; // 当前节点的值加当前节点的父元素的值
+      p[x] = u;
+    }
 
-            return p[x];
-          }
+      return p[x];
+    }
 
-        for (int = 1; i <= n; i++) {
-          p[i] = i;
-          d[i] = 0;
-        }
+    for (int = 1; i <= n; i++) {
+      p[i] = i;
+      d[i] = 0;
+    }
 
-        // 合并
-        p[find(a)] = find(b);
-        d[find(a)] = distance; // 具体问题
+    // 合并
+    p[find(a)] = find(b);
+    d[find(a)] = distance; // 具体问题
       
-      ```
+    ```
 
   </details> 
 
