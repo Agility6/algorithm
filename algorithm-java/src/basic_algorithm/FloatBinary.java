@@ -8,7 +8,7 @@ package basic_algorithm;
  * @Create 2023-06-19
  * @Version 1.0
  */
-public class FloatBinary {
+public class floatBinary {
   public static double binary(double l, double r) {
 
     // eps 表示精度

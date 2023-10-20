@@ -1,4 +1,4 @@
-import basic_algorithm.QuickSort;
+import basic_algorithm.quickSort;
 import util.commonUtil;
 
 public class Test_QuickSort {
@@ -9,7 +9,7 @@ public class Test_QuickSort {
         int[] arr3 = {1,1,1};
         int[] arr4 = {1,1,1,1};
 
-        QuickSort qs = new QuickSort();
+        quickSort qs = new quickSort();
 
         qs.quick_sort(arr1, 0, arr1.length - 1);
         commonUtil.printArrays(arr1);

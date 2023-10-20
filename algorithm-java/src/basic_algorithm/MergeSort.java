@@ -8,7 +8,7 @@ package basic_algorithm;
  * @Create 2023-06-17
  * @Version 1.0
  */
-public class MergeSort {
+public class mergeSort {
   public void merge_sort(int[] arr, int left, int right) {
     if (left >= right) return;
 

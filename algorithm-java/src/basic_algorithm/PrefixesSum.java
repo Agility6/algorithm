@@ -2,7 +2,7 @@ package basic_algorithm;
 
 import java.util.Scanner;
 
-public class PrefixesSum {
+public class prefixesSum {
     /**
      * 输入一个长度为 n 的整数序列。接下来再输入 m 个询问，每个询问输入一对 l,r。
      * 对于每个询问，输出原序列中从第 l 个数到第 r 个数的和。

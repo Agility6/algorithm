@@ -10,7 +10,7 @@ import javax.swing.*;
  * @Create 2023-06-17
  * @Version 1.0
  */
-public class IntegerBinary {
+public class integerBinary {
 
   // 伪代码
   public static int binary_1(int left, int right) {

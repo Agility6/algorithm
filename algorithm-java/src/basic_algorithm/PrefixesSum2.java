@@ -2,7 +2,7 @@ package basic_algorithm;
 
 import java.util.Scanner;
 
-public class PrefixesSum2 {
+public class prefixesSum2 {
     /**
      * 输入一个 n 行 m 列的整数矩阵，再输入 q 个询问，每个询问包含四个整数 x1,y1,x2,y2，表示一个子矩阵的左上角坐标和右下角坐标。
      * 

@@ -1,6 +1,6 @@
 package basic_algorithm;
 
-public class Double_pointer {
+public class double_pointer {
     public void doublePointer(int len) {
         for (int i = 0, j = 0; i < len; i++) {
 

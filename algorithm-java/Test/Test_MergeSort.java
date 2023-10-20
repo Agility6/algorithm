@@ -1,4 +1,4 @@
-import basic_algorithm.MergeSort;
+import basic_algorithm.mergeSort;
 import util.commonUtil;
 
 public class Test_MergeSort {
@@ -9,7 +9,7 @@ public class Test_MergeSort {
         int[] arr3 = {1,1,1};
         int[] arr4 = {1,1,1,1};
 
-        MergeSort ms = new MergeSort();
+        mergeSort ms = new mergeSort();
 
         ms.merge_sort(arr1, 0, arr1.length - 1);
         commonUtil.printArrays(arr1);

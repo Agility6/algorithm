@@ -2,7 +2,7 @@ package basic_algorithm;
 
 import java.util.Scanner;
 
-public class KMP {
+public class kmp {
     public static void main(String[] args) {
         
         /**

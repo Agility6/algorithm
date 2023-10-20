@@ -3,7 +3,7 @@ package basic_algorithm;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class IntervalMerging {
+public class intervalMerging {
     public static void main(String[] args) {
         
     }
