@@ -228,4 +228,71 @@
 
 
 - [ ] Heap
-- [ ] Hash table
+- [x] Hash table
+
+  <details>
+  <summary>Code</summary>
+    一般哈希
+    ```java
+    
+      // 拉链法
+      static int[] h = new int[N];
+      static int[] e = new int[N];
+      static int[] ne = new int[N];
+    
+      public void insert(int x) {
+
+        // mod(负数情况)
+        int k = (x % N + N) % N
+
+        e[index] = x;
+        ne[index] = h[k];
+        h[k] = index++;
+
+      }
+
+
+      public boolean find(int x) {
+        
+        int k = (x % N + N) % N;
+        
+        for (int i = h[k]; i != -1; i = ne[i]) {
+          if (e[i] == x) return true;
+        }
+
+        return false;
+      }
+
+      // 初始化h[]
+      for (int i = 0; i < N; i++) {
+        h[i] = -1;
+      }
+
+    ```
+
+    ```java
+    
+      //开放寻址法
+
+      // N的范围在查询长度的2到3倍
+      static int[] h = new int[N];
+      static int nulls = 0x3f3f3f3f; // 规定当前位置为空
+      public int find(int x) {
+
+        int k = (x % N + N) % N;
+
+        while (h[k] != nulls && h[k] != x) {
+          k++;
+          if (k == N) k = 0;
+        }
+        return k;
+      }
+
+
+      // 初始化
+      for (int i = 0; i < N; i++) {
+        h[i] = nulls;
+      }
+    
+    ```
+  </details>
