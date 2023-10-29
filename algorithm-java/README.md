@@ -67,12 +67,157 @@
 
 ### 🦄 BASIC_ALGORITHMS 
 
-- [ ] Single Linked List
-- [ ] Doubly Linked List 
-- [ ] Stack
-- [ ] Queue
-- [ ] Monotone Stack
-- [ ] Monotonic Queue
+- [x] Single Linked List
+
+  <details>
+  <summary>Code</summary>
+
+    ```java
+
+      int head = -1; // 链表的头部
+      int[] e = new int[N]; // 存储节点的值
+      int[] next = new int[N]; // 存储节点的next
+      int index = 0; // 当前节点位置
+
+      public static void insert(int a) {
+
+        e[index] = a;
+        next[index] = head;
+        head = index++;
+
+      }
+
+      // 如果是删除头节点head = next[head]
+      public static void remove(int k) {
+        next[k] = next[next[k]]
+      }
+    ``` 
+  
+  </details>  
+
+- [x] Doubly Linked List 
+
+  <details>
+  <summary>Code</summary>
+
+    ```java
+
+      int[] e = new int[N];
+      int[] r = new int[N];
+      int[] l = new int[N];
+      int index;
+
+      public static void init() {
+        r[0] = 1;
+        l[1] = 0;
+        index = 2;
+      }
+      
+      // k节点的右边插入
+      public static void insert(int k, int x) {
+        
+        e[index] = x;
+        r[index] = r[k];
+        l[index] = k;
+        l[r[k]] = index;
+        r[k] = index++;
+
+      }
+
+      public static void remove(int k) {
+        l[r[k]] = l[k];
+        r[l[k]] = r[k];
+      }
+
+    ``` 
+  
+  </details>  
+
+- [x] Stack
+
+  <details>
+  <summary>Code</summary>
+
+    ```java
+
+    int[] stk = new int[N];
+    int tt = 0;
+
+    // 插入
+    stk[++tt] = x;
+
+    // 弹出
+    tt--;
+
+    // 栈顶
+    stk[tt];
+
+    ``` 
+  
+  </details>  
+
+- [x] Queue
+
+  <details>
+  <summary>Code</summary>
+
+    ```java
+
+    int[] q = new int[N];
+    int hh = 0; // 队头
+    int tt = -1; // 队尾
+
+    // 队尾插入
+    q[++tt] = x;
+
+    // 队头
+    q[hh] 
+
+    // 是否为空
+    if (hh <= tt) {}
+      
+    ``` 
+  
+  </details>  
+
+- [x] Monotone Stack
+
+  <details>
+  <summary>Code</summary>
+
+    ```java
+
+    int tt = 0;
+    for (int i = 1; i <= n; i++) {
+      while (tt && check(stk[tt], i)) t--;
+      stk[++t] = i;
+    }
+
+    ``` 
+  
+  </details>  
+
+- [x] Monotonic Queue
+
+  <details>
+  <summary>Code</summary>
+
+    ```java
+
+    int hh = 0;
+    int tt = -1;
+
+    for (int i = 0; i < n; i++) {
+
+      while (hh <= tt && check_out(q[hh])) h++;
+      while (hh <= tt && check(q[tt], t)) t--;
+      q[++tt] = i;
+    }
+
+    ``` 
+  
+  </details>  
+
 - [x] KMP
   
   <details>
@@ -226,8 +371,8 @@
 
   </details> 
 
-
-- [ ] Heap
+- [] Heap
+  
 - [x] Hash table
 
   <details>
