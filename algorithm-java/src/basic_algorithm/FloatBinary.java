@@ -1,5 +1,7 @@
 package basic_algorithm;
 
+import java.util.Scanner;
+
 /**
  * ClassName: FloatBinary
  * Description:
@@ -9,23 +11,36 @@ package basic_algorithm;
  * @Version 1.0
  */
 public class floatBinary {
-  public static double binary(double l, double r) {
+  
+   public static void main(String[] args) {
+        
+        /**
+         * 给定一个浮点数n，求它的三次方根
+         * 
+         * 数据范围
+         * -10000 <= n <= 10000
+         * 
+         * 输入样例
+         * 1000.00
+         * 
+         * 输出样例
+         * 10.000000
+         */
 
-    // eps 表示精度
-    double eps = 1e-6;
+        Scanner sc = new Scanner(System.in);
 
-    while (r - l > eps) {
-      double mid = (l + r) / 2;
-      // check为判断条件
-      if (check(mid)) r = mid;
-      else l = mid;
+        double n = sc.nextDouble();
+
+        double i = -1000;
+        double j = 1000;
+
+        while (j - i > 1e-8) {
+            
+            double mid = (j + i) / 2;
+            if (mid * mid * mid >= n) j = mid;
+            else i = mid;
+        }
+
+        System.out.printf("%.6f\n", i);
     }
-
-    return l;
-  }
-
-  private static boolean check(double arg) {
-    return true;
-  }
-
 }
